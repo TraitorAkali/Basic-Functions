@@ -15,7 +15,7 @@ begin
         sum:=x+y+carry;
         carry:=sum div 10;
         sum:=sum mod 10;
-        c:=chr(sum + 48)+c; //Theo ASCII thi '0' o vi tri 48 nen cong them 48 de ra duoc so do trong bang ma ASCII
+        c:=chr(sum + 48)+c;
     end;
     if carry > 0 then c:='1'+c;
     add:=c;    
